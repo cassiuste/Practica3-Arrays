@@ -77,9 +77,9 @@ function aplicarDescuentoManga()
         // Despues se iteran sobre el valor
         foreach($comics as &$comic){
             // cuando se iteran sobre los comics, una vez se detectan que el valor de la clave
-            // del 'idioma' es 'japones', entonces se modifica el precio.
+            // del 'idioma' es 'japones' se modifica el precio, y se aplica el descuento.
             if ($comic['idioma'] == 'Japonés') {
-                $comic['precio'] = $comic['precio'] * 0.7; // Aplicar descuento del 30%
+                $comic['precio'] = $comic['precio'] * 0.7; // Aquí se aplica el descuento de 30%
             }
         }
     }
